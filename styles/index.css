@@ -8,13 +8,28 @@
 
 :root {
   --darkbg: #212121;
-  --primaryFont: #f2f3f2;
+  --lightbg: #f2f3f4;
+  --primaryFont-dark: #f2f3f2;
+  --primaryFont-light: #121212;
   --primaryFontFamily: 'Inclusive Sans', Arial, Helvetica, sans-serif;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/landing.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  z-index: -1;
+}
 body {
   font-family: var(--primaryFontFamily);
-  background: linear-gradient( to right, var(--darkbg), #2b2b2b, var(--darkbg));
-  color: var(--primaryFont);
+  /* background: var(--lightbg); */
+  color: var(--primaryFont-light);
   padding: 12px;
 }
