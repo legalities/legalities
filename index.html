@@ -1,14 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icons/lawicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legalities</title>
-  </head>
-  <body>
-    <div id="root">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legalities</title>
+  <link rel="shortcut icon" href="./img/lawicon.png" type="png">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div id="root">
+    <div id="nav">
+      <h1>Legalities</h1>
+      <div id="navLinks">
+        <span>Home</span>
+        <span>Lessons</span>
+        <span>Updates/News</span>
+        <span>Profile</span>
+      </div>
+      <button id="logbutton">
+        Login
+      </button>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <img src="./icons/chick.png" id="ChickIcon" />
+    <div id="pageBody">
+      <div id="lessonCards">
+        <a href="./pages/whatislaw.html">
+          <div class="lessoncard">
+            <h3>cardtitle</h3>
+            <p>0/30</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./scripts/index.js"></script>
+
 </html>

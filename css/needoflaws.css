@@ -1,0 +1,10 @@
+.section1 .images{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.section1 .images> img{
+    width: 300px;
+}

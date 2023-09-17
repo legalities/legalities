@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Laws</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/whatislaw.css">
+    <link rel="stylesheet" href="../css/trafficlaws.css">
+</head>
+
+<body>
+    <div id="nav">
+        <h1>Legalities</h1>
+        <div id="navLinks">
+            <span>Home</span>
+            <span>Lessons</span>
+            <span>Updates/News</span>
+            <span>Profile</span>
+        </div>
+        <button id="logbutton">
+            Login
+        </button>
+    </div>
+    <div id="trafficlaws" class="learnpage">
+        <div class="section1">
+            <h3> Easy Examples of Laws : Traffic Laws</h3>
+            <ul>
+                <li>Traffic Lights
+                    <p>
+                        You know those traffic lights on the road, right? They are like a game with rules. When the
+                        light is
+                        red, it means "Stop!" It's just like when you play a game, and someone says, "Freeze!" You have
+                        to
+                        stop
+                        moving. When the light turns green, it's like saying, "Go!" Just like in a game, when someone
+                        says,
+                        "Start moving!" you can go.
+                    </p>
+                </li>
+                <li>No Littering:
+                    <p>
+                        Imagine you're in a park, and you have a candy wrapper. Instead of throwing it on the ground,
+                        there's a law that says you have to find a trash can and put it there. It's like a rule to keep
+                        our
+                        environment clean, similar to how you're told not to make a mess at home.
+                    </p>
+                </li>
+            </ul>
+            <div class="traffic-lights">
+                <div class="trafficCircles">
+                    <div class="circle1 circle" id="redcircle" onclick="turnred()"></div>
+                    <div class="circle2 circle" id="orangecircle" onclick="turnorange()"></div>
+                    <div class="circle3 circle" id="greencircle" onclick="turngreen()"></div>
+                </div>
+                <div id="trafficstatus">
+                    STOP
+                </div>
+            </div>
+        </div>
+        <div class="navigatePage">
+            <a href="./needoflaws.html"><span>Prev</span></a>
+            <a href="../index.html"><span>Next</span></a>
+        </div>
+    </div>
+</body>
+
+<script>
+    function turnred() {
+        console.log("red")
+        document.getElementById("redcircle").style.opacity = "1"
+        document.getElementById("orangecircle").style.opacity = "0.6"
+        document.getElementById("greencircle").style.opacity = "0.6"
+        document.getElementById("trafficstatus").innerHTML = "STOP"
+    }
+    function turnorange() {
+        document.getElementById("redcircle").style.opacity = "0.6"
+        document.getElementById("orangecircle").style.opacity = "1"
+        document.getElementById("greencircle").style.opacity = "0.6"
+        document.getElementById("trafficstatus").innerHTML = "GET READY"
+    }
+    function turngreen() {
+        document.getElementById("redcircle").style.opacity = "0.6"
+        document.getElementById("orangecircle").style.opacity = "0.6"
+        document.getElementById("greencircle").style.opacity = "1"
+        document.getElementById("trafficstatus").innerHTML = "GO"
+    }
+</script>
+
+</html>

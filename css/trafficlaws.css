@@ -1,0 +1,44 @@
+.traffic-lights {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.trafficCircles {
+    display: flex;
+    gap: 20px;
+}
+
+.circle:hover {
+    opacity: 1;
+}
+
+.circle {
+    width: 60px;
+    transition: 0.5s;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.circle3 {
+    background: green;
+}
+
+.circle2 {
+    background: orange;
+}
+
+.circle1 {
+    background: red;
+}
+
+#trafficstatus {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
