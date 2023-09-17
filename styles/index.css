@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@600&family=Work+Sans:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkbg: #212121;
+  --primaryFont: #f2f3f2;
+  --primaryFontFamily: 'Inclusive Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--primaryFontFamily);
+  background: linear-gradient( to right, var(--darkbg), #2b2b2b, var(--darkbg));
+  color: var(--primaryFont);
+  padding: 12px;
+}
