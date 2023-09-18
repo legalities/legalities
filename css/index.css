@@ -75,16 +75,25 @@ a {
     padding: 12px;
 }
 
+#lessonCards {
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .lessoncard:hover {
-    transform: scale(0.95);
+    transform: scaleX(0.98);
 }
 
 .lessoncard {
-    transition: 0.6s;
-    padding: 12px;
+    transition: 0.2s;
+    padding-inline: 50px;
     background-color: rgb(250, 250, 31);
     color: rgb(35, 34, 18);
-    width: 300px;
+    min-width: fit-content;
+    width: min(60%, 500px);
     display: flex;
     border-radius: 12px;
     align-items: center;
