@@ -1,0 +1,57 @@
+:root {
+    --purple: #9780ea; 
+    --lightPurple: #e2def0; 
+    --defaultWhite: #f5f5f5; 
+    color: #121212; 
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.container {
+    margin: 0 auto; 
+    padding: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.gradient {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, var(--purple) 0%, var(--defaultWhite) 40%, transparent 100%); /* Radial gradient */
+    opacity: 0.5;
+    padding: 32px 32px;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    z-index: -1;
+    position: fixed;
+    /* margin: 16px 16px; */
+}
+
+.chapter
+{
+    width: 128px;
+    height: 128px;
+    background-color: var(--defaultWhite);
+    border-radius: 25%;
+    box-shadow: 0px 8px 8px #00000024 ;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 32px 32px; 
+}
+
+.chapterIMG
+{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
