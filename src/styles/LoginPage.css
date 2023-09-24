@@ -1,9 +1,32 @@
+.login::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: min(10vh, 100px);
+  background: linear-gradient(to top, #3CDE56 0%, rgba(60, 222, 86, 0.00) 100%);
+  opacity: 0.4;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  opacity: 0.5;
+  width: min(500px, 100%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: black;
+  background: radial-gradient(50% 50% at 50% 50%, #F13232 0%, rgba(231, 67, 67, 0.00) 79.69%);
+}
+
 .login {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: left;
-  background: linear-gradient(to top, #8cfac3, #c59292);
+  background-color: white;
 }
 
 
@@ -17,19 +40,19 @@
   margin-left: 20vh;
 }
 
-.login > h1 {
+.login>h1 {
   font-weight: 500;
   margin-left: 20vh;
   margin-top: 25vh;
   color: #E15C5C;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.login__container > form > h4 {
+.login__container>form>h4 {
   margin-bottom: 5px;
 }
 
-.login__container > form > input {
+.login__container>form>input {
   height: 40px;
   margin-bottom: 10px;
   background-color: #7AE88B;
@@ -69,5 +92,5 @@
   max-width: 25%;
   height: auto;
   align-items: right;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }

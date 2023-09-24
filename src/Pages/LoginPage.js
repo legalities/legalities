@@ -8,7 +8,7 @@ import welcomeimg from "../Assets/welcome.png"
 
 export default function LoginPage() {
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
