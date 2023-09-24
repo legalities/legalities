@@ -8,8 +8,7 @@ import Navbar from "./Components/Navbar";
 function App() {
 
   return (
-    <Navbar />
-    // <Valtion_Use_Sample />
+    <Valtion_Use_Sample />
   );
 }
 
