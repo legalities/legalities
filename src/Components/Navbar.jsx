@@ -4,15 +4,11 @@ import "../styles/navbar.scss"
 export default function Navbar() {
     return (
         <div id="navbar">
-            <p>
-                hello, i am not nested
-            </p>
-            <div id='newparent'>
-                <div id="new">
-                    I am nested :)
-                </div>
+            <div id="navlinks">
+                <a href='#'><div className="navlink"></div></a>
+                <a href='#'><div className="navlink"></div></a>
+                <a href='#'><div className="navlink"></div></a>
             </div>
-
         </div>
     )
 }
