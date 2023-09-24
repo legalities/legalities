@@ -1,11 +1,13 @@
 import "./styles/App.css"
-import Loading from "./Components/Loading/Loading.tsx";
+import store, { updatesamplestate } from "./Store";
+import { useSnapshot } from "valtio";
+import Valtion_Use_Sample from "./Valtion_Use_Sample";
 
 
 function App() {
 
   return (
-    <Loading />
+    <Valtion_Use_Sample />
   );
 }
 
