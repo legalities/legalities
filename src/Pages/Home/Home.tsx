@@ -30,11 +30,6 @@ const Home = () => {
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
       enabled: false,
     },
-    {
-      title: "Exploitation",
-      imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: false,
-    },
 
     // Add more chapter objects as needed
   ];
@@ -48,6 +43,7 @@ const Home = () => {
         imgURL={chapter.imgURL}
         enabled={chapter.enabled}
         offset={index}
+        size={chapters.length}
       />
     );
   });
