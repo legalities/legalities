@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState} from 'react';
-import "./LoginPage.css";
-
+import "../styles/LoginPage.css";
+import "../Assets/welcome.png";
 import { useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
 
@@ -17,7 +17,7 @@ export default function LoginPage() {
     auth
       .signInWithEmailAndPassword(email, password)
       .then(auth => {
-        console.log("succesful");
+        navigate('/Landing');
       })
       .catch(error => alert(error.message))
   }
@@ -30,8 +30,7 @@ export default function LoginPage() {
       console.log(auth);
       if(auth) 
       {
-        console.log("succesful");
-
+        navigate('/LandingPage');
       }
 
     })
@@ -41,20 +40,18 @@ export default function LoginPage() {
 
   return (
     <div className='login'>
-    <img className= "login__logo" src="Mascot.png"></img>
-
+      <h1>Sign in or create account</h1>
   <div className='login__container'>
-    <h1>Sign in</h1>
     <form action="">
 
-      <h5>E-mail</h5>
+      <h4>Email</h4>
 
       <input type="text" value={email} onChange=
       {e => setEmail(e.target.value)}/> {/* what user typed in*/}
 
-      <h5>Password</h5>
+      <h4>Password</h4>
 
-      <input type="password" value={password}
+      <input type="password" value={password} 
       onChange={e => setPassword(e.target.value)}/>
 
       <button type="submit" onClick={signIn}
@@ -63,6 +60,9 @@ export default function LoginPage() {
     </form>
     <button onClick={register}
     className='login__registerButton'>Create your account</button>
+
+    <img className="welcome__image" src="./welcome.png"/>
+    
   </div>
   </div>
   );
