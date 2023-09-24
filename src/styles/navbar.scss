@@ -1,0 +1,18 @@
+// you ca simply nest the component to avoid any further conflicts in stylings
+
+#navbar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    #newparent {
+        #new {
+            color: red;
+            font-weight: bold;
+            font-size: 5em;
+        }
+    }
+}
