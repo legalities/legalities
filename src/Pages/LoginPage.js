@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState} from 'react';
+import { useState } from 'react';
 import "../styles/LoginPage.css";
 import "../Assets/welcome.png";
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +8,7 @@ import welcomeimg from "../Assets/welcome.png"
 
 export default function LoginPage() {
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -23,49 +23,50 @@ export default function LoginPage() {
       .catch(error => alert(error.message))
   }
 
-  const register = e =>{
+  const register = e => {
     e.preventDefault();
-    auth.createUserWithEmailAndPassword(email,password) //literally creates a user with email and password
-    .then((auth) => { //then comes back with auth object
-      // if sucessfully created a new user
-      console.log(auth);
-      if(auth) 
-      {
-        navigate('/LandingPage');
-      }
+    auth.createUserWithEmailAndPassword(email, password) //literally creates a user with email and password
+      .then((auth) => { //then comes back with auth object
+        // if sucessfully created a new user
+        console.log(auth);
+        if (auth) {
+          navigate('/LandingPage');
+        }
 
-    })
-    .catch(error => alert(error.message))
+      })
+      .catch(error => alert(error.message))
   }
 
 
   return (
     <div className='login'>
-      <h1>Sign in or create account</h1>
-  <div className='login__container'>
-    <form action="">
+      <div className='login__container'>
+        <h1>Sign in or create account</h1>
+        <form action="">
 
-      <h4>Email</h4>
+          <h4>Email</h4>
 
-      <input type="text" value={email} onChange=
-      {e => setEmail(e.target.value)}/> {/* what user typed in*/}
+          <input type="text" value={email} onChange= {e => setEmail(e.target.value)} 
+          placeholder='username'
+          /> {/* what user typed in*/}
 
-      <h4>Password</h4>
+          <h4>Password</h4>
 
-      <input type="password" value={password} 
-      onChange={e => setPassword(e.target.value)}/>
+          <input type="password" value={password}
+          placeholder='its hidden !'
+            onChange={e => setPassword(e.target.value)} />
 
-      <button type="submit" onClick={signIn}
-       className='login__signInButton'>Sign in</button>
+          <button type="submit" onClick={signIn}
+            className='login__signInButton'>Sign in</button>
 
-    </form>
-    <button onClick={register}
-    className='login__registerButton'>Create your account</button>
+        </form>
+        <button onClick={register}
+          className='login__registerButton'>Create your account</button>
 
-    <img className="welcome__image" src={welcomeimg}/>
-    
-  </div>
-  </div>
+        <img className="welcome__image" src={welcomeimg} />
+
+      </div>
+    </div>
   );
-  
+
 }

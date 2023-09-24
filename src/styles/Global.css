@@ -16,6 +16,9 @@
 }
 
 body {
+    max-width: 100dvw ;
+    max-height: 100dvh ;
+    overflow: hidden;
     background: #e6ffcd;
 }
 
