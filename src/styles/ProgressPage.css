@@ -1,0 +1,115 @@
+body {
+   max-height: 100vh;
+   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+ 
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(195, 184, 242, 0.8) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.ProgressPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.userPointCard {
+  text-align: center;
+  width: 360px;
+  height: 250px;
+  border-radius: 32px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.ProgressImg{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px auto;
+
+}
+
+.userPointCard h4{
+color: #C3B8F2;
+text-align: center;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.userPointCard h6{
+color: #000;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.userXPCard{
+  width: 360px;
+height: 100px;
+border-radius: 32px;
+background: #FFF;
+padding: 10px;
+margin-bottom: 200px;
+}
+
+.userXPCard h6{
+  color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+}
+
+.pdiv{
+  color: #000;
+text-align: right;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+
+.ProgressFooter{
+  display: flex; /* Use flexbox to arrange images horizontally */
+  justify-content: space-around; /* Distribute space evenly between images */
+  align-items: center; /* Center images vertically */
+  border-radius: 32px 32px 0px 0px;
+background: #F1EDFF;
+margin-bottom: 0;
+width: 100vh;
+}
+
+.ProgressFooter img{
+  height: 50px;
+  width: 50px;
+}
+
+.ProgressHeader{
+  background: #E2DEF0;
+  margin-bottom: 30px;
+  width: 100vh;
+}
+
+.ProgressHeader h1{
+  color: #9780EA;
+  text-align: center;
+font-size: 42px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
