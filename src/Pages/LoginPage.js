@@ -4,6 +4,7 @@ import "../styles/LoginPage.css";
 import "../Assets/welcome.png";
 import { useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
+import welcomeimg from "../Assets/welcome.png"
 
 export default function LoginPage() {
 
@@ -61,7 +62,7 @@ export default function LoginPage() {
     <button onClick={register}
     className='login__registerButton'>Create your account</button>
 
-    <img className="welcome__image" src="./welcome.png"/>
+    <img className="welcome__image" src={welcomeimg}/>
     
   </div>
   </div>
