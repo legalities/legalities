@@ -4,42 +4,61 @@
             "id": 1,
             "name": "Right To equality",
             "color": "blue",
+            "totalQuestions": 6,
             "questions": [
                 {
-                    "question": "some question",
+                    "id": 1,
+                    "question": "The teacher ignores the mistakes of her favourite children",
                     "options": [
-                        "option10",
-                        "option20",
-                        "option30"
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 2,
+                    "question": "girls and boys have the same opportunities to learn and study.",
+                    "options": [
+                        "Right",
+                        "Wrong"
                     ],
                     "correct": 1
                 },
                 {
-                    "question": "some question",
+                    "id": 3,
+                    "question": "To exclude children with disabilities from school.",
                     "options": [
-                        "option11",
-                        "option21",
-                        "option31"
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 4,
+                    "question": "everyone gets an equal chance to be selected in a sports team.",
+                    "options": [
+                        "Right",
+                        "Wrong"
                     ],
                     "correct": 1
                 },
                 {
-                    "question": "some question",
+                    "id": 5,
+                    "question": "children to be forced to work instead of going to school.",
                     "options": [
-                        "option12",
-                        "option22",
-                        "option32"
+                        "Right",
+                        "Wrong"
                     ],
-                    "correct": 1
+                    "correct": 2
                 },
                 {
-                    "question": "some question",
+                    "id": 6,
+                    "question": "Everyone is equal, so it is fine to disrespect elders.",
                     "options": [
-                        "option13",
-                        "option23",
-                        "option33"
+                        "True",
+                        "False"
                     ],
-                    "correct": 1
+                    "correct": 2
                 }
             ]
         },
@@ -47,15 +66,61 @@
             "id": 2,
             "name": "Right to Freedom",
             "color": "blue",
+            "totalQuestions":6,
             "questions": [
                 {
-                    "question": "some question",
+                    "id": 1,
+                    "question": "The teacher ignores the mistakes of her favourite children",
                     "options": [
-                        "option14",
-                        "option24",
-                        "option34"
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 2,
+                    "question": "girls and boys have the same opportunities to learn and study.",
+                    "options": [
+                        "Right",
+                        "Wrong"
                     ],
                     "correct": 1
+                },
+                {
+                    "id": 3,
+                    "question": "To exclude children with disabilities from school.",
+                    "options": [
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 4,
+                    "question": "everyone gets an equal chance to be selected in a sports team.",
+                    "options": [
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 1
+                },
+                {
+                    "id": 5,
+                    "question": "children to be forced to work instead of going to school.",
+                    "options": [
+                        "Right",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 6,
+                    "question": "Everyone is equal, so it is fine to disrespect elders.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "correct": 2
                 }
             ]
         },

@@ -3,6 +3,7 @@ import ChapterCard from "./ChapterCard.tsx";
 import "./../../styles/Home.css";
 import Navbar from "../../Components/Navbar.jsx"
 import Header from "../../Components/Header.jsx"
+import AIAssistantDialogueBox from "../../Components/AIAssistantDialogueBox.jsx";
 
 const Home = () => {
   // Define an array of chapter objects with titles and image URLs
@@ -23,12 +24,17 @@ const Home = () => {
       enabled: false,
     },
     {
-      title: "Exploitation",
+      title: "Religin",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
       enabled: false,
     },
     {
-      title: "Exploitation",
+      title: "Education",
+      imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
+      enabled: false,
+    },
+    {
+      title: "Constitution",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
       enabled: false,
     },
@@ -55,6 +61,7 @@ const Home = () => {
       <Header bg="#DFEDFD" txtcolor="#67A9F6" headertitle="Hey User name" />
       <div className="gradient"></div>
       <div className="container">{chapterComponents}</div>
+      <AIAssistantDialogueBox bottom={true} left={true} />
       <Navbar />
     </>
   );

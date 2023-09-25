@@ -16,6 +16,7 @@ const RewardScreen = ({ XP, accuracy }) => {
           <div className="textRS">Lesson Completed!</div>
         </div>
         <div className="gif">
+
           <img className="gifRS" src={COF} />
         </div>
 
@@ -23,14 +24,14 @@ const RewardScreen = ({ XP, accuracy }) => {
           <div className="textContainer">
             XP Earned
             <div className="text">
-              <img src="   https://cdn-icons-png.flaticon.com/512/728/728139.png " />
+              <img src="https://cdn-icons-png.flaticon.com/512/728/728139.png " />
               {XP}
             </div>
           </div>
           <div className="textContainer">
             Accuracy
             <div className="text">
-              <img src="   https://cdn-icons-png.flaticon.com/512/4729/4729423.png " />
+              <img src="https://cdn-icons-png.flaticon.com/512/4729/4729423.png " />
               {accuracy}
             </div>
           </div>

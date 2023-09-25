@@ -2,18 +2,22 @@ import React, { useState } from 'react'
 import "../styles/chapter.scss"
 import classRoom from "../Assets/images/classroom.png"
 import questiondata from "../Data/Questions.json"
+import { useNavigate } from 'react-router-dom';
+
 
 export default function ChapterQuestionInterface(props) {
 
-    let chapid = props.chapterId-1
+    const navigate = useNavigate()
+
+    let chapterId = props.chapterId-1
     const [currQuestion, setCuestionNum] = useState(0)
     // console.log(questiondata)
 
 
-    let currChapterQiestions = questiondata.chapters[chapid].questions
+    let currChapterQiestions = questiondata.chapters[chapterId].questions
 
     function getchapterOptions() {
-        let result = questiondata.chapters[chapid].questions[currQuestion].options
+        let result = questiondata.chapters[chapterId].questions[currQuestion].options
         return result
     }
 
@@ -23,6 +27,10 @@ export default function ChapterQuestionInterface(props) {
 
         chapteroptions.forEach((option) => {
             resultcomponent.push(<div onClick={() => {
+                if(currQuestion >= questiondata.chapters[chapterId].totalQuestions -1) {
+                    console.log(questiondata.chapters[chapterId].totalQuestions)
+                    navigate(`/result/${chapterId}`)
+                }
                 setCuestionNum(currQuestion + 1)
             }} className='option'>
                 {option}
@@ -37,7 +45,7 @@ export default function ChapterQuestionInterface(props) {
             <div className='QuestionContainer'>
                 <div className='question'>
                     <h3>{currChapterQiestions[currQuestion].question}</h3>
-                    {/* <h3>{questiondata.chapters[chapid].questions[currQuestion]}</h3> */}
+                    {/* <h3>{questiondata.chapters[chapterId].questions[currQuestion]}</h3> */}
                 </div>
                 <div className='options'>
                     {options()}

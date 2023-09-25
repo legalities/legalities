@@ -25,7 +25,7 @@ function Welcome() {
 
         <button onClick={handleClick}> Get started </button>
       </div>
-      <img className="welcome__image" src={mascot} />
+      <img className="welcome__image" alt='' src={mascot} />
     </div>
   )
 
