@@ -26,7 +26,7 @@ body {
     right: 50%;
 
 
-    animation: circleBounce 4s ease 100ms infinite;
+    animation: circleBounce 2s ease 100ms infinite;
 }
 
 @keyframes circleBounce {
