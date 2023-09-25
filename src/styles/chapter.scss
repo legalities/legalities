@@ -1,5 +1,5 @@
 #ChapterDefault {
-    .train-container{
+    .train-container {
         position: absolute;
         width: 100vw;
         bottom: 0;
@@ -17,20 +17,23 @@
 
 @keyframes moveTrain {
     from {
-        left:100vw;
+        left: 100vw;
         right: 0;
         transform: scaleX(1);
-    } 
+    }
+
     50% {
         right: 100vw;
         left: 0;
         transform: scaleX(1);
     }
+
     51% {
         right: 100vw;
         left: 0;
         transform: scaleX(-1);
     }
+
     to {
         right: 0;
         left: 100vw;
@@ -65,9 +68,14 @@
     img:hover {
         transform: scale(0.9) translateX(5px);
     }
+
     img {
         transition: 0.5s;
         position: relative;
         width: min(30px, 5vw);
     }
+}
+
+#ChapterQuestionComponent {
+    margin-left: 60px;
 }
