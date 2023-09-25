@@ -1,0 +1,127 @@
+{
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Right To equality",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option10",
+                        "option20",
+                        "option30"
+                    ],
+                    "correct": 1
+                },
+                {
+                    "question": "some question",
+                    "options": [
+                        "option11",
+                        "option21",
+                        "option31"
+                    ],
+                    "correct": 1
+                },
+                {
+                    "question": "some question",
+                    "options": [
+                        "option12",
+                        "option22",
+                        "option32"
+                    ],
+                    "correct": 1
+                },
+                {
+                    "question": "some question",
+                    "options": [
+                        "option13",
+                        "option23",
+                        "option33"
+                    ],
+                    "correct": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Right to Freedom",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option14",
+                        "option24",
+                        "option34"
+                    ],
+                    "correct": 1
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Right against exploitation",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option15",
+                        "option25",
+                        "option35"
+                    ],
+                    "correct": 1
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Right To freedom of Religon",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option16",
+                        "option26",
+                        "option36"
+                    ],
+                    "correct": 1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Cultural and educational rights",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option17",
+                        "option27",
+                        "option37"
+                    ],
+                    "correct": 1
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Right to constitutional remedies",
+            "color": "blue",
+            "questions": [
+                {
+                    "question": "some question",
+                    "options": [
+                        "option18",
+                        "option28",
+                        "option38"
+                    ],
+                    "correct": 1
+                }
+            ]
+        }
+    ]
+}

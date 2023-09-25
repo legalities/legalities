@@ -1,6 +1,6 @@
 #ChapterDefault {
-    .train-container{
-        position: absolute;
+    .train-container {
+        position: fixed;
         width: 100vw;
         bottom: 0;
         overflow: hidden;
@@ -17,24 +17,15 @@
 
 @keyframes moveTrain {
     from {
-        left:100vw;
-        right: 0;
-        transform: scaleX(1);
-    } 
-    50% {
-        right: 100vw;
-        left: 0;
-        transform: scaleX(1);
-    }
-    51% {
-        right: 100vw;
-        left: 0;
-        transform: scaleX(-1);
-    }
-    to {
-        right: 0;
         left: 100vw;
-        transform: scaleX(-1);
+        right: auto;
+        transform: scaleX(1);
+    }
+
+    to {
+        right: 110vw;
+        left: -10vw;
+        transform: scaleX(1);
     }
 }
 
@@ -65,9 +56,72 @@
     img:hover {
         transform: scale(0.9) translateX(5px);
     }
+
     img {
         transition: 0.5s;
         position: relative;
         width: min(30px, 5vw);
     }
+}
+
+#ChapterQuestionInterface {
+    width: 90%;
+    max-width: 1300px;
+    margin-inline: auto;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    padding: min(12px, 3vw);
+    border-radius: 15px;
+    justify-content: space-around;
+    gap: 12px;
+
+
+    .QuestionContainer {
+        width: 85%;
+        max-width: min(100%, 550px);
+        text-align: center;
+
+        .question {
+            color: #192914;
+            padding: 2em;
+            border-radius: 12px;
+            background: #aaf37c;
+        }
+
+        .options {
+
+            .option:hover {
+                transform: scale(1.1);
+                background: rgba(255, 255, 255, 0.192);
+            }
+
+            .option {
+                padding: 12px 1.3em;
+                border-radius: 12px;
+                background: #EBE7FB;
+                box-shadow: 0px 4px 13px 2px rgba(0, 0, 0, 0.25);
+                margin-inline: auto;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                max-width: 220px;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .questionsImg > img,
+    .questionsImg {
+        max-width: min(100%, 75vw);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #ChapterQuestionInterface {
+        margin: 2em 10px 2em 13vw;
+        width: calc(87vw - 10px);
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+
 }

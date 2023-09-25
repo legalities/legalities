@@ -11,7 +11,7 @@ export default function ChapterDefault() {
 
   const { id } = useParams()
 
-  console.log("id : ", id)
+  let chapterId = id;
 
   return (
     <div id='ChapterDefault' >
@@ -20,7 +20,7 @@ export default function ChapterDefault() {
         <ChapterLeftBar />
       </div>
       <div>
-        <ChapterQuestionInterface />
+        <ChapterQuestionInterface chapterId={chapterId} />
       </div>
       <div className="train-container">
         <img alt="" src={train} className='chapter-pg-train' />
