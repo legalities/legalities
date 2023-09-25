@@ -1,0 +1,91 @@
+.mainContainerRS
+{
+    width: 100vw;
+    height: 100vh;
+    // padding: 16px 16px; 
+    background-color: #fafafa;
+
+    .rectRS{
+        // margin-top: 20%;
+
+        width: 100%;
+        height: 15%;
+        background-color: #d7ffb8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .textRS
+        {
+            color: #58cc02; 
+            font-size: 32px;
+            font-weight: 900;
+        }
+    }
+
+    .gif{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .gifRS
+        {
+            width: 60%;
+        }
+    }
+
+    .xp
+    {
+        display: flex;
+        justify-content: space-evenly;
+        .textContainer
+        {
+            // border: 2px solid #ffc800;
+            background-color: #ffc800;
+
+            color: #ffffff;
+            border-radius: 8px; 
+            height: 128px;
+            width: 128px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 4px 4px; 
+            .text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffffff;
+                width: 100%;
+                height: 100%; 
+                border-radius: 4px;
+
+                font-size: 32px; 
+            }
+            .text:nth-of-type(1)
+            {
+                color: #ffc800;
+            }
+        }
+        .textContainer:nth-of-type(2)
+        {
+            background-color: #58cc02;
+            .text
+            {
+                color: #58cc02;
+            }
+        }
+        .text img{
+            height: 28px;
+            width: 28px;
+            margin: 8px 8px;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .mainContainerRS
+    {
+        width: 60%;
+        margin: 0 auto; 
+    }
+}
