@@ -1,5 +1,5 @@
 import "./styles/App.css"
-import store, { updatesamplestate } from "./Store";
+import store, { updatesamplestate, updateXp } from "./Store";
 import { useSnapshot } from "valtio";
 
 
@@ -25,9 +25,15 @@ function Valtion_Use_Sample() {
       alignItems:"center"
     }}
     >
-      <input type="text" onChange={changeState} />
+      <input type="text" onClick={() => {
+        updateXp(store.xp + 1)
+      }} onChange={changeState} />
       <br/>
       {snapshot.sampleState}
+      <br/>
+      {snapshot.newnumber}
+      <br/>
+      {snapshot.xp}
     </div>
   );
 }

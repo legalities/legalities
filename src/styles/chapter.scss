@@ -1,0 +1,73 @@
+#ChapterDefault {
+    .train-container{
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+        overflow: hidden;
+
+        .chapter-pg-train {
+            position: relative;
+            left: 0;
+            transition: 0.5s;
+            width: min(120px, 10vw);
+            animation: moveTrain 60s linear infinite;
+        }
+    }
+}
+
+@keyframes moveTrain {
+    from {
+        left:100vw;
+        right: 0;
+        transform: scaleX(1);
+    } 
+    50% {
+        right: 100vw;
+        left: 0;
+        transform: scaleX(1);
+    }
+    51% {
+        right: 100vw;
+        left: 0;
+        transform: scaleX(-1);
+    }
+    to {
+        right: 0;
+        left: 100vw;
+        transform: scaleX(-1);
+    }
+}
+
+.chapterHeader {
+    position: relative;
+    top: 0;
+    width: 100dvw;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.chapterLeftBar {
+    position: absolute;
+    display: flex;
+    top: max(15vh, 90px);
+    transition: 0.5s;
+    flex-direction: column;
+    gap: 12px;
+    padding: 50px 12px;
+    border-radius: 0 12px 12px 0;
+    background: #DFEDFD;
+    color: #222;
+    justify-content: center;
+    align-items: center;
+
+    img:hover {
+        transform: scale(0.9) translateX(5px);
+    }
+    img {
+        transition: 0.5s;
+        position: relative;
+        width: min(30px, 5vw);
+    }
+}

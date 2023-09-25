@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+:root {
+    --purple: #9780EA;
+}
+
+.circle {
+    width: 64px;
+    height: 64px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    margin: 0 auto;
+
+    display: none;
+    position: absolute;
+    right: 50%;
+
+
+    animation: circleBounce 2s ease 100ms infinite;
+}
+
+@keyframes circleBounce {
+    0% {
+        display: block;
+        top: -128px;
+        transform: scale(1);
+    }
+
+    25% {
+        display: block;
+        top: 50%;
+        transform: scale(1);
+    }
+
+    45% {
+        display: block;
+        top: 50%;
+        transform: scale(1.5);
+    }
+
+    50% {
+        display: block;
+        top: 50%;
+        transform: scale(1);
+    }
+
+    75% {
+        display: block;
+        top: 50%;
+        transform: scale(50);
+    }
+
+    100% {
+        display: block;
+        top: 50%;
+        transform: scale(50);
+    }
+}

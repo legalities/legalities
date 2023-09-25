@@ -1,0 +1,58 @@
+:root {
+    --navbarColor: linear-gradient(to right, #ffffff00, #DFEDFDd5, #DFEDFDd5, #DFEDFDd5, #DFEDFDd5, #ffffff00);
+}
+
+#navbar {
+    // background: var(--navbarColor);
+    background: var(--navbarColor);
+    width: min(420px, 100%);
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    margin-inline: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+
+    #navlinks {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 3px;
+        justify-content: space-between;
+        border-radius: 12px 12px 0 0;
+
+        .navlink:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .navlink {
+            // min-width: 25px;
+            // border-radius: 50%;
+            aspect-ratio: 1;
+            width: 30px;
+            // background-color: #B3A2F1;
+        }
+
+        a:nth-of-type(1) .navlink {
+            background: url(../Assets/icons/HomeIcon.png);
+            background-position: top;
+            background-size: 30px 30px;
+        }
+
+        a:nth-of-type(2) .navlink {
+            background: url(../Assets/icons/book.png);
+            background-position: top;
+            background-size: 30px 30px;
+        }
+
+        a:nth-of-type(3) .navlink {
+            background: url(../Assets/icons/hekp.png);
+            background-position: top;
+            background-size: 30px 30px;
+        }
+    }
+}
