@@ -1,6 +1,8 @@
 import React from "react";
-import Chapter from "./Chapter.tsx";
+import ChapterCard from "./ChapterCard.tsx";
 import "./../../styles/Home.css";
+import Navbar from "../../Components/Navbar.jsx"
+import Header from "../../Components/Header.jsx"
 
 const Home = () => {
   // Define an array of chapter objects with titles and image URLs
@@ -37,7 +39,7 @@ const Home = () => {
   // Create an array of chapter components with calculated margins and image URLs
   const chapterComponents = chapters.map((chapter, index) => {
     return (
-      <Chapter
+      <ChapterCard
         key={index}
         title={chapter.title}
         imgURL={chapter.imgURL}
@@ -50,8 +52,10 @@ const Home = () => {
 
   return (
     <>
+      <Header bg="#DFEDFD" txtcolor="#67A9F6" headertitle="Hey User name" />
       <div className="gradient"></div>
       <div className="container">{chapterComponents}</div>
+      <Navbar />
     </>
   );
 };

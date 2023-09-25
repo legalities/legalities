@@ -7,7 +7,6 @@ import { auth } from './firebase';
 import welcomeimg from "../Assets/welcome.png"
 
 export default function LoginPage() {
-
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -30,7 +29,7 @@ export default function LoginPage() {
         // if sucessfully created a new user
         console.log(auth);
         if (auth) {
-          navigate('/LandingPage');
+          navigate('/Landing');
         }
 
       })
@@ -46,14 +45,14 @@ export default function LoginPage() {
 
           <h4>Email</h4>
 
-          <input type="text" value={email} onChange= {e => setEmail(e.target.value)} 
-          placeholder='username'
+          <input type="text" value={email} onChange={e => setEmail(e.target.value)}
+            placeholder='Email Please'
           /> {/* what user typed in*/}
 
           <h4>Password</h4>
 
           <input type="password" value={password}
-          placeholder='its hidden !'
+            placeholder='its hidden !'
             onChange={e => setPassword(e.target.value)} />
 
           <button type="submit" onClick={signIn}
@@ -63,7 +62,7 @@ export default function LoginPage() {
         <button onClick={register}
           className='login__registerButton'>Create your account</button>
 
-        <img className="welcome__image" src={welcomeimg} />
+        <img alt="" className="welcome__image" src={welcomeimg} />
 
       </div>
     </div>

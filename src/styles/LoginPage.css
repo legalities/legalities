@@ -1,6 +1,6 @@
 .login::after {
   content: "";
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100vw;
   height: min(10vh, 100px);
@@ -10,11 +10,11 @@
 
 .login::before {
   content: "";
-  position: absolute;
-  top: -40%;
-  right: -20%;
+  position: fixed;
+  top: -20vw;
+  right: -25vw;
   opacity: 0.5;
-  width: min(500px, 100%);
+  width: min(50vw, 100%);
   aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(50% 50% at 50% 50%, #F13232 0%, rgba(231, 67, 67, 0.00) 79.69%);
@@ -30,6 +30,7 @@
   align-items: left;
   background-color: white;
   transition: 0.5s;
+  overflow: hidden;
 }
 
 

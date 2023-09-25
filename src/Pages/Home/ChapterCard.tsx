@@ -1,11 +1,11 @@
 import React from "react";
 import "./../../styles/Home.css";
+
 interface Props {
   title: string;
   imgURL: URL;
   enabled: boolean;
   offset: number;
-
   size: number;
 }
 
