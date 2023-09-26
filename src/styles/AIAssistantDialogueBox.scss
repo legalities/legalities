@@ -6,6 +6,26 @@
     border-radius: 12px;
     padding: 1em;
     position: fixed;
+    transform-origin: bottom left;
+    transition: 0.6s;
+    transform: scale(0.4);
+
+    #collapseAiAssistantBox:hover {
+        background: rgb(127, 155, 218);
+        color: rgb(16, 17, 41);
+    }
+    #collapseAiAssistantBox {
+        transition: 0.5s;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        height: 35px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: white;
+    }
 
     .output img {
         width: 100%;

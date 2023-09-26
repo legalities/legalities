@@ -25,6 +25,7 @@
 
         .gifRS {
             width: 60%;
+            height: min(300px, 75vh);
         }
     }
 
@@ -81,7 +82,7 @@
 
 @media only screen and (min-width: 500px) {
     .mainContainerRS {
-        width: 60%;
+        width: 45%;
         margin: 0 auto;
     }
 
