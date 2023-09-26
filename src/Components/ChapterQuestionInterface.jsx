@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function ChapterQuestionInterface(props) {
 
+    console.log(props)
+
     const navigate = useNavigate()
 
     let chapterId = props.chapterId-1

@@ -68,10 +68,9 @@
     width: 90%;
     max-width: 1300px;
     margin-inline: auto;
-    margin-top: 2em;
     display: flex;
     align-items: center;
-    padding: min(12px, 3vw);
+    padding-inline: (12px, 3vw);
     border-radius: 15px;
     justify-content: space-around;
     gap: 12px;

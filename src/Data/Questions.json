@@ -66,20 +66,20 @@
             "id": 2,
             "name": "Right to Freedom",
             "color": "blue",
-            "totalQuestions":6,
+            "totalQuestions": 6,
             "questions": [
                 {
                     "id": 1,
-                    "question": "The teacher ignores the mistakes of her favourite children",
+                    "question": "Maria expresses her opinion about her school's food in a respectful manner.",
                     "options": [
                         "Right",
                         "Wrong"
                     ],
-                    "correct": 2
+                    "correct": 1
                 },
                 {
                     "id": 2,
-                    "question": "girls and boys have the same opportunities to learn and study.",
+                    "question": "Maria has the right to express her opinion as long as she does it respectfully.",
                     "options": [
                         "Right",
                         "Wrong"
@@ -88,16 +88,7 @@
                 },
                 {
                     "id": 3,
-                    "question": "To exclude children with disabilities from school.",
-                    "options": [
-                        "Right",
-                        "Wrong"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "id": 4,
-                    "question": "everyone gets an equal chance to be selected in a sports team.",
+                    "question": "Alex can participate in a peaceful march to support animal rights as it's a form of freedom of assembly and expression.",
                     "options": [
                         "Right",
                         "Wrong"
@@ -105,8 +96,8 @@
                     "correct": 1
                 },
                 {
-                    "id": 5,
-                    "question": "children to be forced to work instead of going to school.",
+                    "id": 4,
+                    "question": "Lily to be punished at school for expressing her disagreement with a new school policy.",
                     "options": [
                         "Right",
                         "Wrong"
@@ -114,11 +105,20 @@
                     "correct": 2
                 },
                 {
-                    "id": 6,
-                    "question": "Everyone is equal, so it is fine to disrespect elders.",
+                    "id": 5,
+                    "question": "Freedom of speech means you can say anything you want without consequences.",
                     "options": [
                         "True",
                         "False"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "id": 6,
+                    "question": "1. David is spreading hate speech, is he exercising his right to freedom",
+                    "options": [
+                        "Right",
+                        "Wrong"
                     ],
                     "correct": 2
                 }
@@ -128,13 +128,21 @@
             "id": 3,
             "name": "Right against exploitation",
             "color": "blue",
+            "totalQuestions": 2,
             "questions": [
                 {
-                    "question": "some question",
+                    "question": "A 10-year-old named Maya works long hours in a factory instead of going to school.",
                     "options": [
-                        "option15",
-                        "option25",
-                        "option35"
+                        "RIght",
+                        "Wrong"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "question": "Maria's parents ask her to help with household chores, like cleaning her room and setting the table.",
+                    "options": [
+                        "RIght",
+                        "Wrong"
                     ],
                     "correct": 1
                 }
@@ -144,6 +152,7 @@
             "id": 4,
             "name": "Right To freedom of Religon",
             "color": "blue",
+            "totalQuestions": 1,
             "questions": [
                 {
                     "question": "some question",
@@ -160,6 +169,7 @@
             "id": 5,
             "name": "Cultural and educational rights",
             "color": "blue",
+            "totalQuestions": 1,
             "questions": [
                 {
                     "question": "some question",
@@ -176,6 +186,7 @@
             "id": 6,
             "name": "Right to constitutional remedies",
             "color": "blue",
+            "totalQuestions": 1,
             "questions": [
                 {
                     "question": "some question",

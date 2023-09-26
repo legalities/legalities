@@ -11,7 +11,7 @@ export default function ChapterDefault() {
 
   const { id } = useParams()
 
-  let chapterId = id;
+  let chapterId = id -1 ;
 
   return (
     <div id='ChapterDefault' >
