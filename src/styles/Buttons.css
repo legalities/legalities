@@ -1,7 +1,7 @@
 
 
 .button {
-    width: 80%;
+    width: min(80%, 380px);
     height: 64px;
     border-radius: 12px;
     display: flex;
@@ -13,8 +13,15 @@
     margin-top: 32px;
 }
 
+.secondary:hover,
+.primary:hover {
+    transform: scaleX(1.1);
+}
+
 .primary
 {
+    transition: 0.3s;
+    cursor: pointer;
     background-color: #5acc02;
     border: 4px solid #ffffff65; 
     color: #ffffff; 
@@ -22,6 +29,9 @@
 
 .secondary
 {
+    transition: 0.3s;
+    cursor: pointer;
     background-color: #fafafa;
-    border: 4px solid #fafafa65; 
+    border: 4px solid #dbd2d27a; 
+    /* border: 0.3px solid rgba(207, 204, 204, 0.794); */
 }

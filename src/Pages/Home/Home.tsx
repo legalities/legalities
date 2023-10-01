@@ -9,11 +9,6 @@ const Home = () => {
   // Define an array of chapter objects with titles and image URLs
   const chapters = [
     {
-      title: "Rights",
-      imgURL: "https://cdn-icons-png.flaticon.com/512/9904/9904262.png",
-      enabled: true,
-    },
-    {
       title: "Equality",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
       enabled: true,

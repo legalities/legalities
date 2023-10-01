@@ -6,7 +6,7 @@ import "./../../styles/Buttons.css";
 //   buttonText: string;
 // }
 const PrimaryButton = ({ buttonText }) => {
-  return <Link to="/landing"><div className="primary button">{buttonText}</div></Link>;
+  return <div className="primary button">{buttonText}</div>;
 };
 const SecondaryButton = ({ buttonText }) => {
   return <div className="secondary button">{buttonText}</div>;

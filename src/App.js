@@ -14,7 +14,7 @@ import Welcome from "./Pages/login/Welcome.js";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ChapterDefault from "./Pages/Chapters/ChapterDefault";
 import ProgressPage from "./Pages/PregressPage"
-import RewardScreen from "./Components/RewardScreen/RewardScreen.tsx"
+import RewardScreen from "./Components/RewardScreen/RewardScreen.jsx"
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import WhatIsRights from "./Pages/WhatIsRights.jsx";
 

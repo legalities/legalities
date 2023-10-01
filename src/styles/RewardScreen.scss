@@ -1,6 +1,21 @@
+a {
+    all: unset;
+}
+.mainContainerRS::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background: url(../Assets/graphy/confetti.webp);
+    z-index: -1;
+}
 .mainContainerRS {
     width: 100vw;
-    background-color: white;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.721);
+    // background-color: white;
+
 
     .rectRS {
         padding: 16px 2em;
@@ -24,7 +39,8 @@
         align-items: center;
 
         .gifRS {
-            width: 60%;
+            // display: none;
+            width: 30%;
             height: min(300px, 75vh);
         }
     }
@@ -82,7 +98,7 @@
 
 @media only screen and (min-width: 500px) {
     .mainContainerRS {
-        width: 45%;
+        width: 100%;
         margin: 0 auto;
     }
 

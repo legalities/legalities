@@ -34,10 +34,6 @@ const Chapter = ({ title, imgURL, enabled, offset, size }) => {
 
   function handleClick(chapterIndex: number) {
     chapterIndex += 1
-    if(chapterIndex == 1) {
-      navigate(`/rights`)
-      return
-    }
     navigate(`/chapter/${chapterIndex}`)
 
   }

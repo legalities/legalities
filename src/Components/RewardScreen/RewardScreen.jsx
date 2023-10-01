@@ -2,13 +2,20 @@ import React from "react";
 import "./../../styles/RewardScreen.scss";
 import COF from "../../Assets/graphy/confetti.webp";
 
-import PrimaryButton from "../PrimaryButton/PrimaryButton.tsx";
+import PrimaryButton, { SecondaryButton } from "../PrimaryButton/PrimaryButton.tsx";
+import { Link, useParams } from "react-router-dom";
 
 // interface Props {
 //   XP: number;
 //   accuracy: number;
 // }
 const RewardScreen = ({ XP, accuracy }) => {
+
+
+  const { id } = useParams()
+  let chapterId = parseInt(id) + 1;
+  console.log(chapterId)
+
   return (
     <>
       <div className="mainContainerRS">
@@ -16,7 +23,6 @@ const RewardScreen = ({ XP, accuracy }) => {
           <div className="textRS">Lesson Completed!</div>
         </div>
         <div className="gif">
-
           <img className="gifRS" alt="" src={COF} />
         </div>
 
@@ -39,7 +45,8 @@ const RewardScreen = ({ XP, accuracy }) => {
           </div>
         </div>
 
-        <PrimaryButton buttonText="Continue" />
+        <Link to={`/chapter/${parseInt(chapterId+1)}`}><PrimaryButton buttonText="Next Chapter" /></Link>
+        <Link to={"/Landing"}><SecondaryButton buttonText="Home" /></Link>
       </div>
     </>
   );
