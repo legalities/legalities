@@ -53,7 +53,7 @@ export default function ChapterQuestionInterface(props) {
             {
                 chapterState === 0 &&
                 <div className='tectureVideoCaontainer' >
-                    <iframe src="https://www.youtube.com/embed/VRGZmn4-_YY?si=N6HiDlyvgw1aAs8e" className='LectureVideo' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src={questiondata.chapters[chapterId].videoLecture ? questiondata.chapters[chapterId].videoLecture : "https://www.youtube.com/embed/HHNfaPuoZHM?si=CEwMZ0-uIxyv5tiF"} className='LectureVideo' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <br />
                     <div className='chapternavigationButtonConntainer'>
                         <button onClick={() => {

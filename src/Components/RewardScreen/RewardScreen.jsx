@@ -22,8 +22,8 @@ const RewardScreen = ({ XP, accuracy }) => {
         <div className="rectRS">
           <div className="textRS">Lesson Completed!</div>
         </div>
-        <div className="gif">
-          <img className="gifRS" alt="" src={COF} />
+        <div className="gif" >
+          <img className="gifRS" alt="" src={""} />
         </div>
 
         <div className="xp">

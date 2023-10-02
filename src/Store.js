@@ -11,6 +11,7 @@ const store = proxy({
     currLanguage: 1,
 
     mascotDialog: "Hey there",
+    userprogress: 1
 })
 
 export function updatesamplestate( val ) {
@@ -20,6 +21,11 @@ export function updatesamplestate( val ) {
 export function updateXp( val ) {
     store.xp = val
 }
+
+export function UserProgress( val ) {
+    store.userprogress = val
+}
+
 
 
 

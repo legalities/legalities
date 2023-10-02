@@ -5,6 +5,7 @@
             "name": "Right To equality",
             "color": "blue",
             "totalQuestions": 6,
+            "videoLecture" : "https://www.youtube.com/embed/VRGZmn4-_YY?si=N6HiDlyvgw1aAs8e",
             "questions": [
                 {
                     "id": 1,
@@ -67,6 +68,7 @@
             "name": "Right to Freedom",
             "color": "blue",
             "totalQuestions": 6,
+            "videoLecture" : "https://www.youtube.com/embed/sx4evvWyg34?si=qeWXxauoasJhC0Pa",
             "questions": [
                 {
                     "id": 1,

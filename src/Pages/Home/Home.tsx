@@ -4,39 +4,46 @@ import "./../../styles/Home.css";
 import Navbar from "../../Components/Navbar.jsx"
 import Header from "../../Components/Header.jsx"
 import AIAssistantDialogueBox from "../../Components/AIAssistantDialogueBox.jsx";
+import store from "../../Store";
+import { useSnapshot } from "valtio";
+
+
 
 const Home = () => {
+
+  const states = useSnapshot(store)
+  
   // Define an array of chapter objects with titles and image URLs
   const chapters = [
     {
       title: "Equality",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: true,
+      enabled: states.userprogress >= 1 ? true : false,
     },
     {
       title: "Freedom",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4147/4147869.png", // Replace with the actual image URL
-      enabled: false,
+      enabled: states.userprogress >= 2 ? true : false,
     },
     {
       title: "Exploitation",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: false,
+      enabled: states.userprogress >= 3 ? true : false,
     },
     {
       title: "Religion",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: false,
+      enabled: states.userprogress >= 4 ? true : false,
     },
     {
       title: "Education",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: false,
+      enabled: states.userprogress >= 5 ? true : false,
     },
     {
       title: "Constitution",
       imgURL: "https://cdn-icons-png.flaticon.com/512/4110/4110539.png ", // Replace with the actual image URL
-      enabled: false,
+      enabled: states.userprogress >= 6 ? true : false,
     },
 
     // Add more chapter objects as needed
